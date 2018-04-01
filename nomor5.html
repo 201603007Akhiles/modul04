@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Nomor 5</title>
+</head>
+    <body>
+        <h1>
+            <span class="animate">JavaScript Variable</span>
+        </h1>
+    
+        <p>
+            <span id="content"></span>
+        </p>
+
+
+
+        <script>
+
+            //masukan pemain A    
+ 
+            var nameA = prompt('Masukan nama Pemain A');
+            console.log('Nama pemain A: '+nameA);
+
+            var tinggiA = prompt('Masukan tinggi '+nameA);
+            console.log('Tinggi '+nameA+': '+tinggiA);
+
+            var usiaA = prompt('Masukan usia '+nameA);
+            console.log('Usia '+nameA+': '+usiaA);
+
+
+
+            //masukan pemain B
+
+            var nameB = prompt('Masukan nama Pemain B');
+            console.log('Nama pemain B: '+nameB);
+
+            var tinggiB = prompt('Masukan tinggi '+nameB);
+            console.log('Tinggi '+nameB+': '+tinggiA);
+
+            var usiaB = prompt('Masukan usia '+nameB);
+            console.log('Usia '+nameB+': '+usiaB);
+
+
+
+            //masukan pemain C
+
+            var nameC = prompt('Masukan nama Pemain C');
+            console.log('Nama pemain B: '+nameC);
+
+            var tinggiC = prompt('Masukan tinggi '+nameC);
+            console.log('Tinggi '+nameC+': '+tinggiC);
+
+            var usiaC = prompt('Masukan usia '+nameC);
+            console.log('Usia '+nameC+': '+usiaC);
+
+
+               
+            var hasilA=tinggiA+(5*usiaA);
+            var hasilB=tinggiB+(5*usiaB);
+            var hasilC=tinggiC+(5*usiaC);
+                
+            alert('skor '+nameA+': '+hasilA+', skor '+nameB+': '+hasilB +', dan skor '+nameC+': '+hasilC);
+            console.log('skor '+nameA+': '+hasilA+', skor '+nameB+': '+hasilB +', dan skor '+nameC+': '+hasilC);
+                
+                if((hasilA>hasilB)&&(hasilA>hasilC)){
+                    alert(nameA + ' adalah Pemenang, dia meraih skor: ' + hasilA);
+                    console.log('Pemenang= A, meraih skor='+hasilA);
+                }
+                else if((hasilB>hasilA)&&(hasilB>hasilC)){
+                    alert(nameB + ' adalah Pemenang, dia meraih skor: ' + hasilB);
+                    console.log('Winner= B, meraih skor= '+hasilB);
+                }
+                else if((hasilC>hasilA)&&(hasilC>hasilB)){
+                    alert(nameC + ' adalah Pemenang, dia meraih skor: ' + hasilC);
+                    console.log('Winner= C meraih skor= '+hasilC);
+                }
+                else if((hasilC==hasilA)&&(hasilC==hasilB)){
+                    alert('Hasil Skor Seri: ' + hasilA);
+                    console.log('Hasil Skor Seri');
+                }
+        </script>
+
+    </body>
+</html>
